@@ -1,0 +1,34 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".youtube.com"
+  [url-cookie "VISITOR_INFO1_LIVE" "Y71juzmS5yw" "Mon, 16-Dec-2019 01:36:06 GMT" "/" ".youtube.com" nil])
+ (".nytimes.com"
+  [url-cookie "nyt-geo" "US" "Wed, 03 Jul 2019 23:45:19 GMT" "/" ".nytimes.com" nil]
+  [url-cookie "nyt-us" "1" "Wed, 03 Jul 2019 23:45:19 GMT" "/" ".nytimes.com" nil]
+  [url-cookie "nyt-gdpr" "0" "Wed, 03 Jul 2019 23:45:19 GMT" "/" ".nytimes.com" nil]
+  [url-cookie "nyt-a" "z-SIUL6Fw_b_OxiiPm3gFg" "Thu, 02 Jul 2020 17:45:19 GMT" "/" ".nytimes.com" nil])
+ ("www.newyorker.com"
+  [url-cookie "verso_bucket" "527" "Sat, 20 Jun 2020 18:20:46 GMT" "/" "www.newyorker.com" nil]
+  [url-cookie "CN_xid" "40820678-6dd1-47de-9469-647ac3088764" "Wed, 18 Dec 2019 18:20:46 GMT" "/" "www.newyorker.com" nil])
+ (".washingtonpost.com"
+  [url-cookie "wp_devicetype" "0" "Fri, 02-Aug-2019 17:45:59 GMT" "/" ".washingtonpost.com" nil]
+  [url-cookie "wp_country" "US" "Wed, 03-Jul-2019 18:45:59 GMT" "/" ".washingtonpost.com" nil]
+  [url-cookie "ak_bmsc" "5533424EE00C44A9026705977CD7D7D81724034C6E640000D7E91C5D8C9CAB04~plEqGoPRV+5kI17KOu+u+xqusZ60+mV6pfGK7bBA3VgMJ2a36gyE6Y1IloKOL3En2kIRDYAsP1KPYBA9a+h2kGCBcBXC9gDCMiQrd01mia+0ndhRlwTVbcq9TD68jSH0LTgQ3yTf7qCpUjnOrMNUI3DtLqt8NBxE/KJRYdtdGbgpE2tb8XuNy97mAhPWFHfoNLfDsceVY5u5akNTi7cAWX8TU2KTCvTwS64DQASPv7IhvcZIyhzsqci9ACE+0V74Hf" "Wed Jul 03 19:46:00 2019 GMT" "/" ".washingtonpost.com" nil])
+ (".google.com"
+  [url-cookie "NID" "184=HOk7dB6srAtd8kYZzkQ3_tThgFe9tT0vBWnVaSHwEGKfmMXNG1tksw_nXq3zoEZ1wETh1ZbgT_0FuH2OHWIuNuA05xG9FFIEqxsoGF6Ug7Yii6dXPlQg_MqPemYPzVVPLtF3qYCtTDUC1MA4XOcMbuIykqS8ubnE0hOe_jA5tSc" "Sat, 23-Nov-2019 17:49:25 GMT" "/" ".google.com" nil]
+  [url-cookie "CGIC" "IgMqLyo" "Wed, 20-Nov-2019 17:49:24 GMT" "/search" ".google.com" nil]
+  [url-cookie "CGIC" "IgMqLyo" "Wed, 20-Nov-2019 17:49:24 GMT" "/complete/search" ".google.com" nil]))
+)
+(setq url-cookie-secure-storage
+ '((".messenger.com"
+  [url-cookie "sb" "0bPdXODQ78DNHetMekSw9xbO" "Sat May 15 19:02:41 2021 GMT" "/" ".messenger.com" t])
+ ("newyorker.com"
+  [url-cookie "pay_ent_smp" "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsInZlciI6MX0.eyJ1cmxzIjpbIi9jdWx0dXJlL3BlcnNvbmFsLWhpc3Rvcnkvd2hhdC1hYm91dC10aGUtYnJlYWtmYXN0LWNsdWItbW9sbHktcmluZ3dhbGQtbWV0b28tam9obi1odWdoZXMtcHJldHR5LWluLSJdLCJjbnQiOjEsIm1heCI6NCwiZXhwIjoyMDE5MDZ9._QjgpY-HilrcK7mCKUCCufhQTHOtJuBWAdGDItjUGhw" "Sun, 21 Jun 2020 00:20:46 GMT" "/" "newyorker.com" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:
