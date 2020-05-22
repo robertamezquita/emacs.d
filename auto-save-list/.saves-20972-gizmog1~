@@ -1,0 +1,12 @@
+/home/ramezqui/analysis/_EPIC/code/_deeptools-based-corr-analysis/01.correlation-analysis.R
+/home/ramezqui/analysis/_EPIC/code/_deeptools-based-corr-analysis/#01.correlation-analysis.R#
+/home/ramezqui/analysis/_EPIC/code/_csaw-merged-peaks-analysis/01.run-csaw.R
+/home/ramezqui/analysis/_EPIC/code/_csaw-merged-peaks-analysis/#01.run-csaw.R#
+/home/ramezqui/analysis/_EPIC/code/_bulk-rnaseq-analysis/02.processing-rnaseq.R
+/home/ramezqui/analysis/_EPIC/code/_bulk-rnaseq-analysis/#02.processing-rnaseq.R#
+/home/ramezqui/analysis/_EPIC/code/_post-deeptools-tss/01.read-deeptools-tss-matrix.R
+/home/ramezqui/analysis/_EPIC/code/_post-deeptools-tss/#01.read-deeptools-tss-matrix.R#
+/home/ramezqui/analysis/_EPIC/exec/03.process-cutandrun-gene-tss.sh
+/home/ramezqui/analysis/_EPIC/exec/#03.process-cutandrun-gene-tss.sh#
+/home/ramezqui/analysis/_AUDE/exec/bam2fastq-run.sh
+/home/ramezqui/analysis/_AUDE/exec/#bam2fastq-run.sh#

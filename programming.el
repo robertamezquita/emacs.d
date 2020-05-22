@@ -2,6 +2,17 @@
 ;; Programming ;;
 ;;;;;;;;;;;;;;;;;
 
+;; python setup for cluster
+
+
+
+(use-package elpy
+  :ensure t
+  :defer t
+  :init
+  (advice-add 'python-mode :before 'elpy-enable))
+;(setq elpy-rpc-python-command "/app/easybuild/software/Python/3.7.4-foss-2016b/bin/python")
+
 ;; ;; emacs ipython notebook
 ;; (use-package ein
 ;;   :ensure t)

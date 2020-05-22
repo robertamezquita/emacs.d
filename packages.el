@@ -296,7 +296,7 @@ source: `https://emacs.stackexchange.com/questions/21303/looking-for-a-better-wa
   :defer 5
   :diminish
   :init
-  (setq projectile-project-search-path '("~/Repos/"))
+  ;; (setq projectile-project-search-path '("~/Repos/"))
   :bind-keymap ("C-c p" . projectile-command-map)
   :bind* ("C-c P" . (lambda () (interactive)
                       (projectile-cleanup-known-projects)

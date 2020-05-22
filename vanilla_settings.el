@@ -3,19 +3,26 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Aesthetics
-(set-face-attribute 'default nil
-		    :inherit nil :stipple nil
-		    :inverse-video nil :box nil
-		    :strike-through nil :overline nil :underline nil
-		    :slant 'normal :weight 'normal
-		    :height 120 :width 'normal
-		    :foundry "nil" :family "Hack")
-(set-face-attribute 'secondary-selection nil :background "PaleTurquoise2")
+;; (set-face-attribute 'default nil
+;; 		    :inherit nil :stipple nil
+;; 		    :inverse-video nil :box nil
+;; 		    :strike-through nil :overline nil :underline nil
+;; 		    :slant 'normal :weight 'normal
+;; 		    :height 120 :width 'normal
+;; 		    :foundry "nil" :family "Hack")
+;; (set-face-attribute 'secondary-selection nil :background "PaleTurquoise2")
 
 ;; set custom theme that doesn't override background transparency
-(load-theme 'wombat' t)  ;; the t is a "no confirm" flag
-(set-frame-parameter (selected-frame) 'alpha '(93 93)) ;; (focus no-focus-alpha)
-(add-to-list 'default-frame-alist '(alpha . (93 93)))
+;; (load-theme 'sanityinc-solarized-dark' t)  ;; the t is a "no confirm" flag
+;; (load-theme 'tsdh-dark' t)  ;; the t is a "no confirm" flag
+;; (set-frame-parameter (selected-frame) 'alpha '(93 93)) ;; (focus no-focus-alpha)
+;; (add-to-list 'default-frame-alist '(alpha . (93 93)))
+;; (add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes/"))
+;; (load-theme 'nord t)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme 'smart-mode-line-respectful' t)  ;; the t is a "no confirm" flag
+(load-theme 'dracula t)
+
 
 
 ;; Emacs backup files
@@ -136,29 +143,29 @@
   ;; even though this overwrites a global binding
   ("C-M-." . ispell-word))
 
-(use-package flyspell
-  :diminish (flyspell-mode . "φ")
-  :after auto-complete
-  :preface
-  ;; Flyspell signals an error if there is no spell-checking tool is
-  ;; installed. We can advice `turn-on-flyspell' and `flyspell-prog-mode'
-  ;; to try to enable flyspell only if a spell-checking tool is available.
-  (defun modi/ispell-not-avail-p (&rest args)
-    "Return `nil' if `ispell-program-name' is available; `t' otherwise."
-    (not (executable-find ispell-program-name)))  
-  :hook
-  ((text-mode org-mode) . turn-on-flyspell)
-  ((prog-mode) . flyspell-prog-mode)
-  :config
-  (ac-flyspell-workaround)
-  (advice-add 'turn-on-flyspell   :before-until #'modi/ispell-not-avail-p)
-  (advice-add 'flyspell-prog-mode :before-until #'modi/ispell-not-avail-p))
+;; (use-package flyspell
+;;   :diminish (flyspell-mode . "φ")
+;;   :after auto-complete
+;;   :preface
+;;   ;; Flyspell signals an error if there is no spell-checking tool is
+;;   ;; installed. We can advice `turn-on-flyspell' and `flyspell-prog-mode'
+;;   ;; to try to enable flyspell only if a spell-checking tool is available.
+;;   (defun modi/ispell-not-avail-p (&rest args)
+;;     "Return `nil' if `ispell-program-name' is available; `t' otherwise."
+;;     (not (executable-find ispell-program-name)))  
+;;   :hook
+;;   ((text-mode org-mode) . turn-on-flyspell)
+;;   ((prog-mode) . flyspell-prog-mode)
+;;   :config
+;;   (ac-flyspell-workaround)
+;;   (advice-add 'turn-on-flyspell   :before-until #'modi/ispell-not-avail-p)
+;;   (advice-add 'flyspell-prog-mode :before-until #'modi/ispell-not-avail-p))
 
 ;; use prettier symbols for greek letters and math
-(use-package prettify-symbols-mode
-  ;; Can modify `ess-r-prettify-symbols` to add additional symbols
-  :hook
-  ((prog-mode ess-mode inferior-ess-mode) . prettify-symbols-mode))
+;; (use-package prettify-symbols-mode
+;;   ;; Can modify `ess-r-prettify-symbols` to add additional symbols
+;;   :hook
+;;   ((prog-mode ess-mode inferior-ess-mode) . prettify-symbols-mode))
 
 ;; calendar
 (use-package calendar

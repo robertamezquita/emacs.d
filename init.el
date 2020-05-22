@@ -4,12 +4,13 @@
 ;; Package Repositories                                                        ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'package)
+(setq package-check-signature 'nil)
 (setq package-archives
       '(
-	("gnu" . "https://elpa.gnu.org/packages/")
-	("melpa" . "https://melpa.org/packages/")
-	("melpa-stable" . "https://stable.melpa.org/packages/")
-	("org" . "https://orgmode.org/elpa/")))
+	("gnu" . "http://elpa.gnu.org/packages/")
+	("melpa" . "http://melpa.org/packages/")))
+;;	("melpa-stable" . "https://stable.melpa.org/packages/")
+;;	("org" . "http://orgmode.org/elpa/")))
 (package-initialize)
 
 ;;;;;;;;;;;;;;;;;
@@ -55,8 +56,20 @@
 (load (xah-get-fullpath "org_settings"))
 
 
-
-;; ;; Custom set variables by emacs --------------------------------------------
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(package-selected-packages
+;;    (quote
+;;     (groovy-mode zone-rainbow yaml-mode writegood-mode which-key volatile-highlights use-package smex smartscan smart-mode-line reveal-in-osx-finder rainbow-identifiers rainbow-delimiters rainbow-blocks poly-R pandoc-mode ox-pandoc osx-dictionary org-clock-convenience org-bullets openwith northcode-theme nordless-theme nord-theme magit hl-todo goto-chg google-this flycheck f ess emojify elpy dracula-theme dired-rainbow dired-dups dired-du diminish default-text-scale counsel-projectile color-theme-sanityinc-solarized auto-complete anzu ace-window))))
+;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  )
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -64,10 +77,12 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (dired-dups zone-rainbow dired-rainbow rainbow-blocks rainbow-identifiers auto-complete org-bullets ox-pandoc org-clock-convenience yaml-mode elpy poly-R poly-markdown pandoc-mode markdown-mode ess reveal-in-osx-finder magit flycheck undo-tree anzu counsel-projectile counsel ivy goto-chg which-key writegood-mode smex openwith smartscan osx-dictionary volatile-highlights google-this popup ace-window hl-todo rainbow-delimiters dired-du use-package smart-mode-line f emojify diminish default-text-scale color-theme-sanityinc-solarized))))
+    (unfill zone-rainbow yaml-mode writegood-mode which-key volatile-highlights use-package smex smartscan smart-mode-line reveal-in-osx-finder rainbow-identifiers rainbow-delimiters rainbow-blocks poly-R pandoc-mode ox-pandoc osx-dictionary org-clock-convenience org-bullets openwith northcode-theme nordless-theme nord-theme magit hl-todo groovy-mode goto-chg google-this flycheck f ess emojify elpy dracula-theme dired-rainbow dired-dups dired-du diminish default-text-scale counsel-projectile color-theme-sanityinc-solarized auto-complete anzu ace-window))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)

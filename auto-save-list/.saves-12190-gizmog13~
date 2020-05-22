@@ -1,0 +1,16 @@
+/home/ramezqui/analysis/_TCRT/code/_diagnose-tcrt-seq/Trinity/trinity_all/Trinity.fasta
+/home/ramezqui/analysis/_TCRT/code/_diagnose-tcrt-seq/Trinity/trinity_all/#Trinity.fasta#
+/home/ramezqui/analysis/_TCRT/code/_diagnose-tcrt-seq/pull.sh
+/home/ramezqui/analysis/_TCRT/code/_diagnose-tcrt-seq/#pull.sh#
+/home/ramezqui/analysis/_TCRT/exec/run_kb-python.sh
+/home/ramezqui/analysis/_TCRT/exec/#run_kb-python.sh#
+/home/ramezqui/analysis/_TCRT/data-meta/tcrt-sequences_v2/addon.gtf.gz
+/home/ramezqui/analysis/_TCRT/data-meta/tcrt-sequences_v2/#addon.gtf.gz#
+/home/ramezqui/analysis/_TCRT/code/00.import-counts.Rmd
+/home/ramezqui/analysis/_TCRT/code/#00.import-counts.Rmd#
+/home/ramezqui/analysis/_TCRT/code/02.initial-qc.Rmd
+/home/ramezqui/analysis/_TCRT/code/#02.initial-qc.Rmd#
+/home/ramezqui/analysis/_TCRT/code/03.preprocessing.Rmd
+/home/ramezqui/analysis/_TCRT/code/#03.preprocessing.Rmd#
+/home/ramezqui/analysis/_TCRT/code/_diagnose-tcrt-seq/diagnose.Rmd
+/home/ramezqui/analysis/_TCRT/code/_diagnose-tcrt-seq/#diagnose.Rmd#
